@@ -9,6 +9,18 @@ export default {
       fontFamily: {
         inter: ["Inter", 'serif']
       },
+      backgroundColor: {
+        'gray_900': 'hsl(0, 0%, 8%)',
+        'gray_800': 'hsl(0, 0%, 12%)',
+        'gray_700': 'hsl(0, 0%, 20%)',
+        'green': 'hsl(75, 94%, 57%)'
+      },
+      colors: {
+        'gray_900': 'hsl(0, 0%, 8%)',
+        'gray_800': 'hsl(0, 0%, 12%)',
+        'gray_700': 'hsl(0, 0%, 20%)',
+        'green': 'hsl(75, 94%, 57%)'
+      }
     },
   },
   plugins: [],
