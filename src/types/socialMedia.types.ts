@@ -11,6 +11,8 @@ export interface PersonDetail {
     socialLinks: SocialMediaLink[]
 };
 
+export type PersonDetailWithoutSocialLinks = Omit<PersonDetail, 'socialLinks'>;
+
 export interface Persons {
     person: PersonDetail[]
 };

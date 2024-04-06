@@ -9,6 +9,10 @@ export default {
       fontFamily: {
         inter: ["Inter", 'serif']
       },
+      backgroundImage: {
+        'design': '/src/assets/images/desktop-design.jpg',
+        'm-design': '/src/assets/images/mobile-design.jpg'
+      },
       backgroundColor: {
         'gray_900': 'hsl(0, 0%, 8%)',
         'gray_800': 'hsl(0, 0%, 12%)',
