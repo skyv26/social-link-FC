@@ -5,7 +5,7 @@ export const UserCard = (user: PersonDetailWithoutSocialLinks) => {
     userImage.alt = user.name;
     userImage.title = user.name;
     userImage.src = user.img;
-    userImage.className = 'inline-block rounded-full size-20 min-[375px]:size-[86px]';
+    userImage.className = 'inline-block rounded-full size-20 min-[375px]:size-[86px] min-[1366px]:size-[85px]';
     
     const userName = document.createElement('h1');
     userName.textContent = user.name;
@@ -25,7 +25,7 @@ export const UserCard = (user: PersonDetailWithoutSocialLinks) => {
     userPrimaryInformation.insertAdjacentElement('beforeend', userPlace);
 
     const card = document.createElement('div');
-    card.className = 'flex flex-col justify-center items-center gap-4 !w-full min-[375px]:gap-[27px]'; 
+    card.className = 'flex flex-col justify-center items-center gap-4 !w-full min-[375px]:gap-[27px] min-[1366px]:gap-[25px]'; 
     card.insertAdjacentElement('afterbegin', userImage);
     card.insertAdjacentElement('beforeend', userPrimaryInformation);
     card.insertAdjacentElement('beforeend', userDescription);

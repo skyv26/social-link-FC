@@ -10,7 +10,7 @@ export default {
         inter: ["Inter", 'serif']
       },
       backgroundImage: {
-        'design': "url('./src/assets/images/desktop-design.jpg')",
+        'design': "url('./src/assets/images/destkop-design.jpg')",
         'm-design': "url('./src/assets/images/mobile-design.jpg')"
       },
       backgroundColor: {

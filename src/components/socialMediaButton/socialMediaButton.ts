@@ -6,7 +6,7 @@ import { SocialMediaLink } from "../../types/socialMedia.types";
 
 export const SocialMediaButton = (socialMediaData: SocialMediaLink) => {
     const anchorTag = document.createElement('a');
-    anchorTag.className = 'block rounded-md p-[13px] w-full bg-gray_700 text-white font-inter font-semibold text-sm min-[375px]:text-[15px]',
+    anchorTag.className = 'block rounded-md p-[13px] w-full bg-gray_700 text-white font-inter font-semibold text-sm min-[375px]:text-[15px] min-[1366px]:p-[12px] min-[1366px]:text-[14px]',
     anchorTag.href = socialMediaData.link
     anchorTag.textContent = socialMediaData.text
     return anchorTag as HTMLAnchorElement;

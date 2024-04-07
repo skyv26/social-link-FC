@@ -6,9 +6,4 @@
     body {
         @apply bg-gray_900 flex justify-center h-screen relative z-0;
     }
-
-    /* body::after {
-        content: '';
-        @apply absolute bg-m-design bg-no-repeat bg-contain w-screen h-screen top-0 left-0 z-20 opacity-20;
-    } */
 }
