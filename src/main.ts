@@ -15,10 +15,22 @@ socialLinks.map(({ text, link }: SocialMediaLink) => {
     linkContainer.insertAdjacentElement('beforeend', button); // Append each button
 });
 
+const toggle = document.createElement('button');
+toggle.textContent = '🌟'
+toggle.className = `bg-transparent border-none outline-none 
+  absolute top-5 right-5 text-lg z-20 
+  animate-rotateScale`;
+
+mainCard.insertAdjacentElement('beforeend', toggle);
 mainCard.insertAdjacentElement('beforeend', linkContainer);
 
 document.querySelector('#app')?.insertAdjacentElement(
     'afterbegin',
     mainCard
 );
+
+// document.querySelector('#app')?.insertAdjacentElement(
+//     'beforeend',
+//     mainCard
+// );
 
