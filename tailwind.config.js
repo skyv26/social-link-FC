@@ -24,8 +24,18 @@ export default {
         'gray_800': 'hsl(0, 0%, 12%)',
         'gray_700': 'hsl(0, 0%, 20%)',
         'green': 'hsl(75, 94%, 57%)'
-      }
+      },
+      keyframes: {
+        rotateScale: {
+          '0%, 100%': { transform: 'scale(1) rotate(0deg)' },
+          '50%': { transform: 'scale(1.5) rotate(180deg)' },
+        },
+      },
+      animation: {
+        rotateScale: 'rotateScale 3s infinite ease-in-out', // Adjust duration as needed
+      },
     },
+    
   },
   plugins: [],
 };
