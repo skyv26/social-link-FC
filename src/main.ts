@@ -6,7 +6,7 @@ import './style.css';
 import { PersonDetailWithoutSocialLinks, SocialMediaLink } from './types/socialMedia.types';
 
 let indexVal = 0; // Initial index for social media data
-const themeToggle = document.createElement('button');
+const themeToggle = document.createElement('button') as HTMLElement;
 
 function updateUI() {
   // Fetch the current social media data
@@ -47,9 +47,9 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   themeToggle.textContent = '🌟';
-  themeToggle.className = `bg-transparent border-none outline-none 
+  themeToggle.className = `hidden bg-transparent border-none outline-none 
     absolute top-5 right-5 text-lg z-20 
-    animate-rotateScale`;
+    animate-rotateScale themeToggle`;
 
   themeToggle.addEventListener('click', () => {
     if (rootElement.classList.contains('dark')) {
