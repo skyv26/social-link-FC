@@ -5,32 +5,63 @@ import socialMediaData from './data/social-media/socialMediaData';
 import './style.css';
 import { PersonDetailWithoutSocialLinks, SocialMediaLink } from './types/socialMedia.types';
 
-const { socialLinks, ...personWithoutSocialLinks } = socialMediaData()[0];
-const mainCard = SocialMediaCard(UserCard(personWithoutSocialLinks as PersonDetailWithoutSocialLinks)) as Element;
-const linkContainer = document.createElement('div');
-linkContainer.className = 'flex flex-col justify-center align-center text-center gap-3 min-[375px]:gap-4 min-[1366px]:gap-[17px]'
+let indexVal = 0; // Initial index for social media data
+const themeToggle = document.createElement('button');
 
-socialLinks.map(({ text, link }: SocialMediaLink) => {
-    const button = SocialMediaButton({ text, link } as SocialMediaLink); // Create the button
-    linkContainer.insertAdjacentElement('beforeend', button); // Append each button
+function updateUI() {
+  // Fetch the current social media data
+  const { socialLinks, ...personWithoutSocialLinks } = socialMediaData()[indexVal];
+
+  // Create the main card
+  const mainCard = SocialMediaCard(UserCard(personWithoutSocialLinks as PersonDetailWithoutSocialLinks)) as Element;
+
+  // Create the link container
+  const linkContainer = document.createElement('div');
+  linkContainer.className = 'flex flex-col justify-center align-center text-center gap-3 min-[375px]:gap-4 min-[1366px]:gap-[17px]';
+
+  // Populate links dynamically
+  socialLinks.forEach(({ text, link }: SocialMediaLink) => {
+    const button = SocialMediaButton({ text, link } as SocialMediaLink);
+    linkContainer.appendChild(button);
+  });
+
+  // Update the DOM
+  const appElement = document.querySelector('#app') as HTMLElement;
+  appElement.innerHTML = ''; // Clear the existing content
+  appElement.appendChild(mainCard);
+  mainCard.insertAdjacentElement('beforeend', themeToggle);
+  mainCard.insertAdjacentElement('beforeend', linkContainer);
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  const rootElement = document.documentElement;
+
+  // Theme handling
+  const savedTheme = localStorage.getItem('theme');
+  if (savedTheme === 'dark') {
+    indexVal = (indexVal + 1) % socialMediaData().length; // Cycle through indices
+    updateUI();
+    rootElement.classList.add('dark');
+  } else if (savedTheme === 'light') {
+    rootElement.classList.remove('dark');
+  }
+
+  themeToggle.textContent = '🌟';
+  themeToggle.className = `bg-transparent border-none outline-none 
+    absolute top-5 right-5 text-lg z-20 
+    animate-rotateScale`;
+
+  themeToggle.addEventListener('click', () => {
+    if (rootElement.classList.contains('dark')) {
+      rootElement.classList.remove('dark');
+      localStorage.setItem('theme', 'light'); // Save preference
+    } else {
+      rootElement.classList.add('dark');
+      localStorage.setItem('theme', 'dark'); // Save preference
+    }
+    indexVal = (indexVal + 1) % socialMediaData().length; // Cycle through indices
+    updateUI();
+  });
+  // Initial UI rendering
+  updateUI();
 });
-
-const toggle = document.createElement('button');
-toggle.textContent = '🌟'
-toggle.className = `bg-transparent border-none outline-none 
-  absolute top-5 right-5 text-lg z-20 
-  animate-rotateScale`;
-
-mainCard.insertAdjacentElement('beforeend', toggle);
-mainCard.insertAdjacentElement('beforeend', linkContainer);
-
-document.querySelector('#app')?.insertAdjacentElement(
-    'afterbegin',
-    mainCard
-);
-
-// document.querySelector('#app')?.insertAdjacentElement(
-//     'beforeend',
-//     mainCard
-// );
-
