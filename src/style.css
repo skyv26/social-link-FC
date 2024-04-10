@@ -4,6 +4,10 @@
 
 @layer base {
     body {
-        @apply bg-gray_900 flex justify-center h-screen relative z-0 dark:bg-aakash_bg dark:bg-[length:200%_200%] dark:animate-bg-slide;
+        @apply bg-gray_900 grid place-content-center h-screen relative z-0 dark:bg-aakash_bg dark:bg-[length:200%_200%] dark:animate-bg-slide;
     }
+}
+
+.card:hover .themeToggle {
+    @apply block;
 }
