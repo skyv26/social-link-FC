@@ -62,6 +62,13 @@ document.addEventListener('DOMContentLoaded', () => {
     indexVal = (indexVal + 1) % socialMediaData().length; // Cycle through indices
     updateUI();
   });
+
   // Initial UI rendering
   updateUI();
+
+  // Add footer only once
+  const footerHTML = `<footer class="text-white text-center translate-y-4 dark:text-gray_900 font-inter">Made with ❤️ by <a class="text-green font-bold no-underline dark:text-gray_700" target="_blank" href="https://linkedin.com/in/skyv2022">Aakash Verma</a></footer>`;
+  if (!document.querySelector('footer')) {
+    document.body.insertAdjacentHTML('beforeend', footerHTML);
+  }
 });
