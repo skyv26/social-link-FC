@@ -36,6 +36,7 @@
 <summary>Front-end</summary>
   <ul>
     <li><a href="https://tailwindcss.com/docs">TailwindCSS</a></li>
+    <li><a href="https://www.typescriptlang.org/">TypeScript</a></li>
   </ul>
 </details>
 
@@ -76,11 +77,11 @@ In order to run this project you need:
 
 Clone this repository to your desired folder:
 
-`git clone https://github.com/skyv26/Recipe-Page-Frontend-Only.git`
+`git clone https://github.com/skyv26/social-link-FC.git`
 
 then
 
-`cd Recipe-Page-Frontend-Only`
+`cd social-link-FC`
 
 ### Install
 
@@ -140,7 +141,7 @@ If you like this project then please give a ⭐️ and also share your feedback 
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-- ❤️ [Ant Design](https://ant.design/)
+- ❤️ [TypeScript](https://www.typescriptlang.org/)
 - ❤️ [TailwindCSS](https://tailwindcss.com/docs)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
