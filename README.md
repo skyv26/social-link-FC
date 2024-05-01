@@ -1,70 +1,154 @@
-# MyTicketO - Ticket App
+<!-- TABLE OF CONTENTS -->
 
-> Ticketmaster Entertainment, Inc. is an American ticket sales and distribution company based in Beverly Hills, California with operations in many countries around the world. In 2010, it merged with Live Nation under the name Live Nation Entertainment. Ticketmaster charges a fee on tickets purchased and resold on the platform.
+# 📗 Table of Contents
 
-## Built With
+- [📖 About the Project](#about-project)
+  - [🛠 Built With](#built-with)
+    - [Tech Stack](#tech-stack)
+    - [Key Features](#key-features)
+  - [🚀 Live Demo](#live-demo)
+- [💻 Getting Started](#getting-started)
+  - [Setup](#setup)
+  - [Prerequisites](#prerequisites)
+  - [Install](#install)
+  - [Usage](#usage)
+  - [Run Linters](#run-tests)
+- [👥 Authors](#authors)
+- [🔭 Future Features](#future-features)
+- [🤝 Contributing](#contributing)
+- [⭐️ Show your support](#support)
+- [🙏 Acknowledgements](#acknowledgements)
+- [📝 License](#license)
 
-- Major languages: **JavaScript**
-- Library: **React.js**, **React-Redux**, **@reduxjs/toolkit**, **redux-logger**
-- Technologies used: **CSS3, JSX**
-- Testing Tool: **Jest**, **React-testing Library**
+<!-- PROJECT DESCRIPTION -->
 
-## Live Demo
+# 📢 Social Links Profile <a name="about-project"></a>
 
-[click here](https://myticketo.netlify.app)
+> This project is a responsive web application built as a challenge from the Frontend Mentor platform. The app allows users to showcase their social media profiles in an elegant and accessible design. It features customizable profile links, a clean user interface, and seamless responsiveness across devices. The challenge helped me enhance my front-end development skills, particularly in building user-friendly layouts, optimizing for accessibility, and implementing responsive designs using modern web technologies.
 
-## Video Presentation
+## 🛠 Built With <a name="built-with"></a>
 
-[Click Here](https://www.loom.com/share/c67c334458a94215b27b75e3ed889fb3)
+### Tech Stack <a name="tech-stack"></a>
 
-## Getting Started
+> Social Links Profile App is frontend project
 
+<details>
+<summary>Front-end</summary>
+  <ul>
+    <li><a href="https://tailwindcss.com/docs">TailwindCSS</a></li>
+  </ul>
+</details>
 
-To get a local copy up and running follow these simple example steps.
+<!-- Features -->
+
+### Key Features <a name="key-features"></a>
+
+> We can do switch the profile by clicking on the star icon.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- LIVE DEMO -->
+
+## 🚀 Live Demo <a name="live-demo"></a>
+
+> Link to your deployed project.
+
+- [Social Links Profile](https://skyv26.github.io/social-link-FC/)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- GETTING STARTED -->
+
+## 💻 Getting Started <a name="getting-started"></a>
+
+> In order to start with this project do as follows :
+
+To get a local copy up and running, follow these steps.
 
 ### Prerequisites
 
-> In order to work with this project. You need to have basic understanding of *React.js*.
+In order to run this project you need:
+
+`yarn install`
+
 
 ### Setup
 
-- git clone `https://github.com/skyv26/ticket-master.git`
+Clone this repository to your desired folder:
+
+`git clone https://github.com/skyv26/Recipe-Page-Frontend-Only.git`
+
+then
+
+`cd Recipe-Page-Frontend-Only`
 
 ### Install
 
-**In order to start the project properly please install the npm dependicies by using below command**
+Install this project with:
 
-- npm install
+`yarn install Or npm i`
 
 ### Usage
 
-**In order to run your project use below command**
+`yarn dev or npm run dev`
 
-- npm start
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## Authors
+<!-- AUTHORS -->
 
-👤 **Aakash Verma**
+## 👥 Authors <a name="authors"></a>
+
+> Mention all of the collaborators of this project.
+
+👨‍💻 **Aakash Verma**
 
 - GitHub: [@skyv26](https://github.com/skyv26)
 - Twitter: [@vrma_aakash](https://twitter.com/vrma_aakash)
-- LinkedIn: [dev.aakashv](https://linkedin.com/in/skyv2022)
+- LinkedIn: [skyv2022](https://linkedin.com/in/skyv2022)
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## 🤝 Contributing
+<!-- FUTURE FEATURES -->
+
+## 🔭 Future Features <a name="future-features"></a>
+
+> N/A
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- CONTRIBUTING -->
+
+## 🤝 Contributing <a name="contributing"></a>
 
 Contributions, issues, and feature requests are welcome!
 
 Feel free to check the [issues page](../../issues/).
 
-## Show your support
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-Give a ⭐️ if you like this project!
+<!-- SUPPORT -->
 
-## 📝 License
+## ⭐️ Show your support <a name="support"></a>
+
+> Write a message to encourage readers to support your project
+
+If you like this project then please give a ⭐️ and also share your feedback using github_issues.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- ACKNOWLEDGEMENTS -->
+
+## 🙏 Acknowledgments <a name="acknowledgements"></a>
+
+- ❤️ [Ant Design](https://ant.design/)
+- ❤️ [TailwindCSS](https://tailwindcss.com/docs)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- LICENSE -->
+
+## 📝 License <a name="license"></a>
 
 This project is [MIT](./LICENSE) licensed.
 
-## Acknowledgment
-- [Design](https://www.behance.net/gallery/31579789/Ballhead-App-(Free-PSDs)) by [Nelson Sakwa](https://www.behance.net/sakwadesignstudio)
-- [Creative Commons License](https://creativecommons.org/licenses/)
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
